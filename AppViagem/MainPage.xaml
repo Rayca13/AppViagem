@@ -7,6 +7,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -14,8 +15,28 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Hello, World!"
-                Style="{StaticResource Headline}"
+                Text="Origem"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Label
+                Text="Destino"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Label
+                Text="Distância"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            
+            <Label
+                Text="Rendimento"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Preço Combustível"
+                Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
@@ -25,11 +46,17 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+                x:Name="bnt_VerPedagios"
+                Text="Ver Pedágio"                
+                HorizontalOptions="Fill"
+                Clicked="bnt_VerPedagios_Clicked"/>
+
+            <Button
+                x:Name="btn_CalcularCusto"
+                Text="Calcualr Custo"                
+                HorizontalOptions="Fill" 
+                Clicked="btn_CalcularCusto_Clicked"/>
+
         </VerticalStackLayout>
     </ScrollView>
 
