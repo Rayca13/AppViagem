@@ -32,5 +32,5 @@ namespace AppViagem.Helpers
         {
             return _conn.Table<Pedagio>().ToListAsync();
         }
-    }
+    }     //feito
 }
