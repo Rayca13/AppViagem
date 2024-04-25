@@ -17,4 +17,4 @@ namespace AppViagem.Models
         public string local { get => local; set { local = value; } }
         public double valor { get => valor; set { valor = value; } }
     }
-}
+} //feito
