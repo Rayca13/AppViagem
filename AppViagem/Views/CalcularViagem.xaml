@@ -3,10 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppViagem.Views.CalcularViagem"
              Title="CalcularViagem">
+    
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            x:Name="lbl_local" Text="Local:"/>
+        <Label
+            x:Name="lbl_destino" Text="Destino:"/>
+        <Label
+            x:Name="lbl_valor" Text="Valor:"/>
+
+        <Button Text="Somar" Margin="5" x:Name="btn_somar" Clicked="btn_somar_Clicked"/>
+
+        <Button Text="calcular nova viagem" Margin="5" x:Name="btn_novaViagem" Clicked="btn_novaViagem_Clicked"/>
+   
     </VerticalStackLayout>
 </ContentPage>
+    
