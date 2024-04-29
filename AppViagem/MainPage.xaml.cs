@@ -1,8 +1,10 @@
-﻿namespace AppViagem
+﻿using AppViagem.Models;
+
+namespace AppViagem
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        public static Viagem vg;
 
         public MainPage()
         {
@@ -16,8 +18,13 @@
 
         private void btn_CalcularCusto_Clicked(object sender, EventArgs e)
         {
-
+            vg = new Viagem
+            {
+                
+            };
         }
+
+    
     }
 
 }

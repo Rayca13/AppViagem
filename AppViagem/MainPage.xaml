@@ -9,8 +9,9 @@
             Spacing="25">
             
             <Image
-                Source="dotnet_bot.png"
-                Height="5"            
+                Source="fundo.jpg"
+                Margin="1"
+                Height="1"            
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
@@ -38,12 +39,6 @@
                 Text="Preço Combustível"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
                 x:Name="bnt_VerPedagios"
