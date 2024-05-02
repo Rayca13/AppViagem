@@ -19,34 +19,48 @@
                 Text="Origem"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
-            
+            <Entry x:Name="txt_origem"/>
+
             <Label
                 Text="Destino"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
-            
+            <Entry BindingContext="destino" x:Name="txt_destino" />
+
             <Label
                 Text="Distância"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Entry BindingContext="distancia" x:Name="txt_distancia" />
             
             <Label
                 Text="Rendimento"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Entry BindingContext="rendimento" x:Name="txt_rendimento" />
 
             <Label
                 Text="Preço Combustível"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Entry BindingContext="valor_combustivel" x:Name="txt_combustivel" />
 
             <Button
-                x:Name="bnt_VerPedagios"
-                Text="Ver Pedágio"                
+                Margin="5"
+                x:Name="bnt_CiarPedagio"
+                Text="Criar Pedágio"                
                 HorizontalOptions="Fill"
-                Clicked="bnt_VerPedagios_Clicked"/>
+                Clicked="bnt_CiarPedagio_Clicked"/>
 
             <Button
+                Margin="5"
+                x:Name="btn_listaPedagio"
+                Text="Lista Pedagio"
+                HorizontalOptions="Fill"
+                Clicked="btn_listaPedagio_Clicked"/>
+
+            <Button
+                Margin="5"
                 x:Name="btn_CalcularCusto"
                 Text="Calcualr Custo"                
                 HorizontalOptions="Fill" 

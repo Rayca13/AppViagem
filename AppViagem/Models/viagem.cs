@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using AppViagem.Views;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppViagem.Models
 {
-    public class Viagem
+    public class viagem
     {
         string _origem;
         string _destino;
@@ -16,7 +17,7 @@ namespace AppViagem.Models
         double _valor_gas;
 
         [AutoIncrement, PrimaryKey]
-        public int id { get; set; }
+        public static int id { get; set; }
 
         public string origem { get => _origem; set { if (value == null) throw new Exception("Origem invalida"); _origem = value; } }
         public string destino { get => _destino; set { if (value == null) throw new Exception("Destino invalido"); _destino = value; } }
@@ -24,5 +25,14 @@ namespace AppViagem.Models
         public double rendimento { get => _rendimento; set { if (value == 0.0) throw new Exception("Rendimento invalido"); _rendimento = value; } }
         public double valor_gas { get => _valor_gas; set { if (value == 0.0) throw new Exception("Valor do Combustivel invalida"); _valor_gas = value; } }
 
+        public static implicit operator viagem (viagem v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator viagem (Views.viagem v)
+        {
+            throw new NotImplementedException();
+        }
     }
-} // feito
+} 

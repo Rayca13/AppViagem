@@ -8,7 +8,7 @@
     Title="AppViagem">
 
     <ShellContent
-        Title="Home"
+        Title="INICIO"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

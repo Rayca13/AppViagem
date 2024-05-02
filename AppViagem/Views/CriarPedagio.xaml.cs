@@ -22,7 +22,7 @@ public partial class CriarPedagio : ContentPage
 		}
 		catch (Exception ex) 
 		{
-		
+			await DisplayAlert("Erro", ex.Message, "OK");
 		}
     }
 }
