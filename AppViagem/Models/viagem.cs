@@ -25,14 +25,6 @@ namespace AppViagem.Models
         public double rendimento { get => _rendimento; set { if (value == 0.0) throw new Exception("Rendimento invalido"); _rendimento = value; } }
         public double valor_gas { get => _valor_gas; set { if (value == 0.0) throw new Exception("Valor do Combustivel invalida"); _valor_gas = value; } }
 
-        public static implicit operator viagem (viagem v)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static implicit operator viagem (Views.viagem v)
-        {
-            throw new NotImplementedException();
-        }
+           
     }
 } 

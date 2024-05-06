@@ -23,10 +23,6 @@ namespace AppViagem.Helpers
             return _conn.InsertAsync(p);
         }
 
-        public Task<int> Delete (int id)
-        {
-            return _conn.Table<Pedagio>().DeleteAsync();
-        }
 
         public Task<List<Pedagio>> GetAll()
         {

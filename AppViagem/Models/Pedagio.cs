@@ -9,12 +9,11 @@ namespace AppViagem.Models
 {
     public class Pedagio
     {
-        string _local;
-        double _valor;
+        
 
         [AutoIncrement, PrimaryKey]
         public int id { get; set; }
-        public string local { get => local; set { local = value; } }
-        public double valor { get => valor; set { valor = value; } }
+        public string local { get; set; }
+        public double valor { get; set;  }
     }
-} //feito
+} 
